@@ -4,10 +4,15 @@
 <head>
     <title> Demo Page</title>
 
+    <link rel="ico" type="image/x-icon" href="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/4/29/1240996556472/exclamation-001.jpg?width=620&quality=85&fit=max&s=0cc18cebc5b5a40aeaf6dee96a7f3ffa">
     <link rel="stylesheet" href="b.css">
-
+    <meta charset="UTF-8">
     <script src="c.js"></script>
 
+
+    <style>
+        /* This is internal css */
+    </style>
 </head>
 
 
@@ -106,7 +111,247 @@
 <address>
     AT/post- NAYAGARH
 </address>
+
+<bdo dir="rtl"> THIS will be in R t L</bdo>
+
+<!-- This is  a comment line-->
+
+<a href="https://www.google.com" target="_blank">Google</a>
+<!-- 
+absolute url vs relative url -->
+
+
+<a href="mailto:iamashutoshnayak@gmail.com">Send Mail</a>
+
+<button onclick="document.location='https://www.google.com'">click here</button>
 </body>
 
 
+<a href="/html/a.html">Relative Link</a>
+
+<!-- how to  create a bookmark -->
+
+<p><a href="#c4">Jump to chapter 4</a></p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam praesentium ullam sapiente tempora odit quos eveniet suscipit recusandae, nam vero aliquid nesciunt quasi explicabo ea exercitationem maxime pariatur necessitatibus quae ut voluptate! Repellendus eius repudiandae necessitatibus voluptatibus doloremque quod quaerat, distinctio repellat soluta.</p>
+
+<h4 id="c4">This is chapter 4</h4>
+
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+  </map>
+
+<table>
+    <tr>
+        <th colspan="2">Company</th>
+        <th rowspan="2">Contact</th>
+        <th>Country</th>
+        
+    </tr>
+    <tr>
+        <td>Xyz</td>
+        <td>9777489160</td>
+        <td>India</td>
+    </tr>
+
+    <ul>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Cold coffee</li>
+    </ul>
+
+    <ol>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Cold coffee</li>
+    </ol>
+
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+ 
+   
+
+</table>
+
+
+<ul style="list-style-type: disc;"></ul>
+
+<ul style="list-style-type: circle;"></ul>
+
+<ul style="list-style-type: square;"></ul>
+
+<ul style="list-style-type: none;"></ul>
+
+<ol type="1"></ol>
+
+<ol type="A"></ol>
+
+
+<ol type="a"></ol>
+
+
+<ol type="I"></ol>
+
+
+<ol type="i"></ol>
+
+
+<ol start="50"></ol>
+
+
+<!-- p, div is a block level element-->
+
+<!-- span - inline element [a,i,q]-->
+
+
+<iframe src="url" height="200" width="300">
+
+</iframe>
+
+
+<code>
+    
+    x=5;
+    y=6;
+    z=x+y;
+
+</code>
+<!-- A semantic element clearly describes its meaning to both the browser and the developer. -->
+
+<h2>&reg;</h2>
+<h2>&copy;</h2>
+<!-- 
+utf character for emoji -->
+<p style="font-size:48px">
+    &#128512; &#128516; &#128525; &#128151;
+    </p>
+
+
+    <!-- form 
+    it is used to collect user input 
+    it will send to a server for processing. -->
+
+
+    <form action="" method="post" autocomplete="off">
+        Enter Your name
+        <br>
+        <input type="text" name="" id="">
+        <br>
+        <input type="radio" name="fav_langauge">
+        Html
+        <input type="radio" name="fav_langauge">
+      css
+        
+        <input type="radio" name="fav_langauge">
+      js
+        <br>
+
+        <input type="checkbox" name="B.tech">
+        B.tech 
+        <br>
+        <input type="checkbox" name="B.tech">
+        BSE
+        <br>
+        
+        <input type="checkbox" name="B.tech">
+        B.COM
+        <br>
+
+        <input type="submit" value="Submit">
+
+        <select name="cars">
+
+            <option value="volvo">volvo</option>
+            
+            <option value="BMW">BMW</option>
+
+            
+            <option value="AUDI">AUDI</option>
+
+            
+            <option value="Suzuki" selected>Suzuki</option>
+        </select>
+        
+
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+    
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+<!-- 
+          <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+        <button type="button" onclick="alert('Submitted')">Complete</button>
+
+
+
+    <input type="tetx" value="predefined" readonly>
+
+    <input type="tetx" value="predefined" disabled>
+
+
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone"
+    placeholder="123-45-678">
+
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+
+</form>
+
+
+<video width="320" height="240" controls>
+    <source src="a.mp4" type="video/mp4">
+
+
+
+    <audio controls>
+        <source src="a.mp3" type="audio/mpeg">
+
+    </audio>
+</video>
 </html>
